@@ -1,11 +1,5 @@
-
 import java.io.Serializable;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 /**
  *
  * @author Sergey
@@ -27,9 +21,6 @@ public class Item implements Serializable{
         this.priceOne = priceOne;
     } 
     
-    
-    
-
     /**
      * @return the name
      */
@@ -156,10 +147,4 @@ public class Item implements Serializable{
         this.oxn = oxn;
     }
 
-    
-     
-    
-  
-    
-    
 }

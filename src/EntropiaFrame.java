@@ -46,8 +46,6 @@ public class EntropiaFrame extends javax.swing.JFrame {
         
         controller.choiceItem((String)jComboBox1.getSelectedItem());
 
-        
-        
     }
 
     /**
@@ -267,13 +265,13 @@ public class EntropiaFrame extends javax.swing.JFrame {
         jFrameAverage.setResizable(false);
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel10.setText("Old Number");
+        jLabel10.setText("Old count");
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel11.setText("Old Price");
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel12.setText("New Number");
+        jLabel12.setText("New Count");
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel13.setText("New Price");
@@ -935,8 +933,6 @@ public class EntropiaFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         jFrameAverage.setVisible(true);
         
-        
-        
     }//GEN-LAST:event_jMenuAverageActionPerformed
 
     private void jButtonCancelAverageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancelAverageActionPerformed
@@ -974,9 +970,6 @@ public class EntropiaFrame extends javax.swing.JFrame {
        
    } 
     
-    
-  
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton buttonDown;
     private javax.swing.JButton buttonLeft;

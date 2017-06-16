@@ -33,40 +33,28 @@ public class PaintGraph extends JPanel{
   paintFunc = false; // 
   stepX = 5f;
   stepY = 0.1f;
-  
-  
- 
  }
 
  public void paint(Graphics g)
  {
   super.paint(g);
   Graphics2D g2 = (Graphics2D)g;
-
   g2.setStroke(new BasicStroke(3));
 
   // Ось Y
   g2.drawLine(   oxn  , oyn , oxn, ly + oyn );
-  
-  
    // Ось Х
   g2.drawLine( oxn ,  ly + oyn  , lx + Math.abs(oxn) ,  ly + oyn  ); 
-  
- 
-  
   //Ось Y 100%
   g.drawLine( (int)(oxn + kx) , 0 - Math.abs(oyn), (int)(oxn + kx) , ly + oyn);
-  
-  
-  
   g2.setStroke(new BasicStroke(1));
   
 // Надпись
  // g.drawString( "Y" , ( int ) ( lx * kx + oxn) - 10 , oyn + 10 );
  // g.drawString( "0" , ( int ) ( lx * kx + oxn ) - 10 , ( int) ( ly * ky+ oyn) + 10 );
   
- //drawing grid
- // vertical line
+ //Сетка
+ // Вертикальные линии
   for (float  xLine = 0; xLine < 1000 ; xLine = xLine + stepX){
       int x = oxn + (int)( (xLine + 100)* kx  / 100 );
       
@@ -74,11 +62,8 @@ public class PaintGraph extends JPanel{
       
     //надпись по оси 0x
       g.drawString( Float.toString(xLine ).substring(0, 3) , x, ly + oyn + 15);
-      
-      
-  //    
   }
-  // horizontal line
+  // горизонтальные линии
   for (int i = 0; true ; i++){
       
       
@@ -105,12 +90,8 @@ public class PaintGraph extends JPanel{
      g.drawLine( oxn - 3 , oyn + ly -(int)(i * ky) , oxn + 3, oyn + ly -(int)(i * ky) );
  } 
   
- 
-  
  if (paintFunc){     funcGraph(g); }
   
-  
- 
  }
 
  // группа методов рисующих графики функций
@@ -152,9 +133,6 @@ public class PaintGraph extends JPanel{
          if (((x  - deltaX) < pointCord[i][0] & (x  + deltaX)> pointCord[i][0]) &
                  ((y - deltaY) < pointCord[i][1] & (y + deltaY)> pointCord[i][1])){
              numLine = i;
-                   
-             
-             
             break;
          }
      }
@@ -163,9 +141,6 @@ public class PaintGraph extends JPanel{
      numberPointSelect = numLine;
      return numLine;
  }
-
-
-
 
  // группа getXXX(), setXXX() - методов
  public int getNx() {
@@ -234,8 +209,6 @@ public class PaintGraph extends JPanel{
  public void setOxn(int oxn) {
   this.oxn = oxn;
  }
-
-    
 
     /**
      * @return the table

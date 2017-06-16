@@ -315,7 +315,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="11" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Old Number"/>
+                <Property name="text" type="java.lang.String" value="Old count"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel11">
@@ -331,7 +331,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="11" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="New Number"/>
+                <Property name="text" type="java.lang.String" value="New Count"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel13">
